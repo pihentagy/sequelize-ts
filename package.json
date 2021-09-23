@@ -1,0 +1,27 @@
+{
+  "name": "seq-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && tsc-alias",
+    "start": "npm run build && node ./dist/index.js",
+    "dev": "tsnd --inspect=0.0.0.0:9229 --respawn --log-error -r tsconfig-paths/register ./index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.9.1",
+    "@types/validator": "^13.6.3",
+    "express": "^4.17.1",
+    "sequelize": "^6.6.5",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.4.3",
+    "tsc-alias": "^1.3.9"
+  },
+  "dependencies": {
+    "sqlite3": "^5.0.2"
+  }
+}

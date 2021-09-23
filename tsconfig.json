@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "allowSyntheticDefaultImports":true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true, // we need to import .json,
+        "moduleResolution": "node", // needed for resolveJsonModule
+        "outDir": "./dist/",
+        "noImplicitAny": false, // will switch on later
+        "baseUrl": ".",
+        "paths": {"@a/*": ["./a/*"]}
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules"]
+}
