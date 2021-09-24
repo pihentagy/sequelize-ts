@@ -26,3 +26,7 @@ main ended
 ```
 
 However, when you remoe the lastName field from the model, it appears.
+
+---
+
+Update: the solution is to change the target from ESNext to anything else.
